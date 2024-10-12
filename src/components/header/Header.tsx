@@ -3,10 +3,13 @@ import HeaderLogo from "../../assets/HeaderLogo.png"
 
 function Header(){
     return(
-        <header>
-            <div className='HeaderContainer'>
+        <header className='HeaderContainer'>
+            <div className='Logobox'>
                 <img className="LogoImg" src={HeaderLogo}></img>
                 <h1 className="">Todo List</h1>
+            </div>
+            <div>
+                <input className='Search'></input>
             </div>
         </header>
     )
