@@ -1,9 +1,13 @@
 import './Header.css';
+import HeaderLogo from "../../assets/HeaderLogo.png"
 
 function Header(){
     return(
-        <header className="">
-            <h1>Header</h1>
+        <header>
+            <div className='HeaderContainer'>
+                <img className="LogoImg" src={HeaderLogo}></img>
+                <h1 className="">Todo List</h1>
+            </div>
         </header>
     )
 }
