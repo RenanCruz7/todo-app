@@ -28,7 +28,7 @@
     background-color: #171717;
     border-radius: 20px;
     width: 50%; /* Aumenta a largura do input */
-    border: 1px solid gray; /* Define a cor das bordas como branca */
+    border: 1.5px solid gray; /* Define a cor das bordas como branca */
     padding: 10px; /* Adiciona padding para melhor aparência */
     box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
     margin-top: 20px;
