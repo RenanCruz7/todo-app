@@ -8,8 +8,8 @@ function Header(){
                 <img className="LogoImg" src={HeaderLogo}></img>
                 <h1 className="">Todo List</h1>
             </div>
-            <div>
-                <input className='Search'></input>
+            <div className='SearchContainer'>
+                <input className='Search' />
             </div>
         </header>
     )

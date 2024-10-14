@@ -1,23 +1,35 @@
-.HeaderContainer{
+.HeaderContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
 }
-.Logobox{
+
+.Logobox {
     display: flex;
     align-items: center;
     padding: 5px 0 0 5px;
     cursor: pointer;
 }
 
-.LogoImg{
+.LogoImg {
     width: 50px;
     height: 50px;
     cursor: pointer;
 }
 
-.Search{
-    background: inherit;
-    border-radius: 10px;
+.SearchContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Search {
+    background-color: #171717;
+    border-radius: 20px;
+    width: 50%; /* Aumenta a largura do input */
+    border: 1px solid gray; /* Define a cor das bordas como branca */
+    padding: 10px; /* Adiciona padding para melhor aparência */
+    box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
+    margin-top: 20px;
 }
