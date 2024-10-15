@@ -9,7 +9,7 @@ function Header(){
                 <h1 className="">Todo List</h1>
             </div>
             <div className='SearchContainer'>
-                <input className='Search' />
+                <input className='Search' placeholder='Search Task' />
             </div>
         </header>
     )
