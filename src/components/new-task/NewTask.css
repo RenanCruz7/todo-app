@@ -1,17 +1,33 @@
-.new-task-container{
+.new-task-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
+
 .new-task-input,
 .new-task-textarea {
-    width: 20%; /* Ajuste conforme necessário */
+    width: 20%; /* Largura para dispositivos maiores */
     margin: 5px 0; /* Espaçamento entre os elementos */
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .new-task-input,
+    .new-task-textarea {
+        width: 50%; /* Ajusta a largura dos elementos em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .new-task-input,
+    .new-task-textarea {
+        width: 80%; /* Ajusta a largura dos elementos em telas muito pequenas */
+    }
 }
