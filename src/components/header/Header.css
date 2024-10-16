@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+    padding: 10px;
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
 }
 
 .Logobox {
@@ -22,6 +23,7 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    margin-top: 10px; /* Adiciona margem superior para espaçamento em telas menores */
 }
 
 .Search {
@@ -33,4 +35,26 @@
     box-sizing: border-box; /* Inclui o padding e a borda no tamanho total */
     margin-top: 20px;
     font-family: "Montserrat", sans-serif;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .Search {
+        width: 70%; /* Ajusta a largura do input em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .Search {
+        width: 90%; /* Ajusta a largura do input em telas muito pequenas */
+    }
+
+    .HeaderContainer {
+        flex-direction: column; /* Alinha os elementos em coluna em telas muito pequenas */
+        align-items: center;
+    }
+
+    .Logobox {
+        margin-bottom: 10px; /* Adiciona margem inferior para espaçamento em telas muito pequenas */
+    }
 }
